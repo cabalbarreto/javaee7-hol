@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='UTF-8' ?> 
-<!-- 
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  *
@@ -61,7 +61,7 @@
                 <h:form>
                     <h1><h:commandLink value="Movie Plex 7" action="/index"/></h1>
                 </h:form>
-                <!--            
+                <!--
                 <c:choose>
                     <c:when test="#{null != facesContext.application.flowHandler.currentFlow}">
                         Inside a flow
@@ -77,8 +77,11 @@
             <div id="left">
                 <ui:insert name="left">
                     <h:form>
-                        <h:commandLink action="item1">Item 1</h:commandLink>
-                        <p/><h:outputLink value="item2.xhtml">Item 2</h:outputLink>
+                        <h:commandLink action="booking">Book a movie</h:commandLink>
+                        <p/><h:outputLink value="${facesContext.externalContext.requestContextPath}/faces/chat/chatroom.xhtml">Chat Room</h:outputLink>
+                        <p/><h:outputLink value="${facesContext.externalContext.requestContextPath}/faces/batch/sales.xhtml">Sales</h:outputLink>
+                        <p/><h:outputLink value="${facesContext.externalContext.requestContextPath}/faces/client/movies.xhtml">Movies</h:outputLink>
+                        <p/><h:outputLink value="${facesContext.externalContext.requestContextPath}/faces/points/points.xhtml">Points</h:outputLink>
                     </h:form>
                 </ui:insert>
             </div>
